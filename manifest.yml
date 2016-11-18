@@ -1,0 +1,9 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: nodejs-reflect-test
+  host: nodejs-reflect-test
+  command: node index.js
+  buildpack: sdk-for-nodejs  
