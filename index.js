@@ -20,7 +20,7 @@ function process(input) {
 }
 
 if (require.main === module) {
-  console.log(process("this is a test"));
+  console.log(process("me"));
 } else {
 
 app.set('port', process.env.PORT || 3000);  
