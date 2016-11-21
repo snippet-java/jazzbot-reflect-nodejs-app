@@ -6,7 +6,7 @@ app.set('port', process.env.PORT || 3000);
 
 app.get('/reverse', function (req, res) {
    var input = req.query.text;
-   res.end(input.split("").reverse().join(""));
+   res.send(input.split("").reverse().join(""));
 });
 
 app.get('/help', function (req, res) {
