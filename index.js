@@ -16,11 +16,11 @@ app.get('/help', function (req, res) {
 });
 
 function process(input) {
-  return input.split("").reverse().join("");
+  return input;
 }
 
 if (require.main === module) {
-  console.log(process("me"));
+  console.log(process("reverse me"));
 } else {
 
 app.set('port', process.env.PORT || 3000);  
