@@ -16,7 +16,7 @@ app.get('/help', function (req, res) {
 });
 
 function process(input) {
-  return input;
+  return input.split("").reverse().join("");
 }
 
 if (require.main === module) {
