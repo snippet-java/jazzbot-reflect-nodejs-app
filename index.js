@@ -2,7 +2,7 @@ var express = require('express');
 var http = require('http');
 var app = express();
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', 9999);
 
 app.get('/reverse', function (req, res) {
    var input = "madam";
