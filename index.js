@@ -5,7 +5,7 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 
 app.get('/reverse', function (req, res) {
-   var input = req.query.text;
+   var input = "madam";
    res.end(input.split("").reverse().join(""));
 });
 
